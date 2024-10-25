@@ -1,4 +1,11 @@
 import java.util.ArrayList;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.FileWriter;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
 public class MenuKort {
 
     public MenuKort() {
@@ -43,5 +50,33 @@ public class MenuKort {
         System.out.println(pizzaArrayList.get(i));
         }
     }
-}
+
+
+        public void writePizzaMenuToFile(){
+                File pizzaFile = new File("/Users/bruger/Desktop/UNI/1. semester/Programmering/IntelliJ/MarioPizza/src/pizzaMenu.txt");
+                try (FileWriter writer = new FileWriter(pizzaFile, true)) {
+                    for (int i = 0; i < pizzaArrayList.size(); i++) {
+                        Pizza p = pizzaArrayList.get(i);
+
+                        String pizzaName = p.getPizzaName();
+                        int pizzaPrice = p.getPizzaPrice();
+                        int pizzaNr = p.getPizzaNr();
+
+                        writer.append(pizzaName + ", ");
+                        writer.append((pizzaPrice) + ", ");
+                        writer.append(Integer.toString(pizzaNr) + '\n');
+
+                        System.out.println(p.getPizzaName() + ", " + p.getPizzaPrice() + ", " + p.getPizzaNr());
+                    }
+
+                }
+
+                catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
+        }
+    }
+
+
 

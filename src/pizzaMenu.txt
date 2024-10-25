@@ -1,0 +1,150 @@
+Margherita, 60, 15
+Pepperoni, 70, 32
+Hawaiian, 75, 22
+BBQ Chicken, 85, 44
+Vegetarian, 65, 19
+Meat Lovers, 90, 37
+Four Cheese, 80, 28
+Buffalo Chicken, 95, 11
+Supreme, 100, 41
+Mexican, 85, 27
+Seafood Special, 110, 49
+Tuna and Sweetcorn, 95, 12
+Spicy Sausage, 80, 25
+Prosciutto and Rocket, 90, 33
+Mushroom and Truffle Oil, 120, 46
+Calzone, 85, 17
+Carbonara Pizza, 90, 31
+Pesto and Chicken, 95, 20
+Gorgonzola and Pear, 110, 35
+Salami and Olive, 80, 23
+Spinach and Ricotta, 70, 26
+Greek Pizza (Feta and Olives), 75, 18
+Zucchini and Goat Cheese, 85, 38
+Egg and Bacon, 100, 42
+Shrimp and Pesto, 90, 21
+Tandoori Chicken, 110, 47
+Pastrami Pizza, 95, 30
+Bolognese Pizza, 85, 29
+Quattro Stagioni, 105, 40
+Lamb and Mint, 115, 36
+Margherita, 60, 15
+Pepperoni, 70, 32
+Hawaiian, 75, 22
+BBQ Chicken, 85, 44
+Vegetarian, 65, 19
+Meat Lovers, 90, 37
+Four Cheese, 80, 28
+Buffalo Chicken, 95, 11
+Supreme, 100, 41
+Mexican, 85, 27
+Seafood Special, 110, 49
+Tuna and Sweetcorn, 95, 12
+Spicy Sausage, 80, 25
+Prosciutto and Rocket, 90, 33
+Mushroom and Truffle Oil, 120, 46
+Calzone, 85, 17
+Carbonara Pizza, 90, 31
+Pesto and Chicken, 95, 20
+Gorgonzola and Pear, 110, 35
+Salami and Olive, 80, 23
+Spinach and Ricotta, 70, 26
+Greek Pizza (Feta and Olives), 75, 18
+Zucchini and Goat Cheese, 85, 38
+Egg and Bacon, 100, 42
+Shrimp and Pesto, 90, 21
+Tandoori Chicken, 110, 47
+Pastrami Pizza, 95, 30
+Bolognese Pizza, 85, 29
+Quattro Stagioni, 105, 40
+Lamb and Mint, 115, 36
+Margherita, 60, 15
+Pepperoni, 70, 32
+Hawaiian, 75, 22
+BBQ Chicken, 85, 44
+Vegetarian, 65, 19
+Meat Lovers, 90, 37
+Four Cheese, 80, 28
+Buffalo Chicken, 95, 11
+Supreme, 100, 41
+Mexican, 85, 27
+Seafood Special, 110, 49
+Tuna and Sweetcorn, 95, 12
+Spicy Sausage, 80, 25
+Prosciutto and Rocket, 90, 33
+Mushroom and Truffle Oil, 120, 46
+Calzone, 85, 17
+Carbonara Pizza, 90, 31
+Pesto and Chicken, 95, 20
+Gorgonzola and Pear, 110, 35
+Salami and Olive, 80, 23
+Spinach and Ricotta, 70, 26
+Greek Pizza (Feta and Olives), 75, 18
+Zucchini and Goat Cheese, 85, 38
+Egg and Bacon, 100, 42
+Shrimp and Pesto, 90, 21
+Tandoori Chicken, 110, 47
+Pastrami Pizza, 95, 30
+Bolognese Pizza, 85, 29
+Quattro Stagioni, 105, 40
+Lamb and Mint, 115, 36
+Margherita, 60, 15
+Pepperoni, 70, 32
+Hawaiian, 75, 22
+BBQ Chicken, 85, 44
+Vegetarian, 65, 19
+Meat Lovers, 90, 37
+Four Cheese, 80, 28
+Buffalo Chicken, 95, 11
+Supreme, 100, 41
+Mexican, 85, 27
+Seafood Special, 110, 49
+Tuna and Sweetcorn, 95, 12
+Spicy Sausage, 80, 25
+Prosciutto and Rocket, 90, 33
+Mushroom and Truffle Oil, 120, 46
+Calzone, 85, 17
+Carbonara Pizza, 90, 31
+Pesto and Chicken, 95, 20
+Gorgonzola and Pear, 110, 35
+Salami and Olive, 80, 23
+Spinach and Ricotta, 70, 26
+Greek Pizza (Feta and Olives), 75, 18
+Zucchini and Goat Cheese, 85, 38
+Egg and Bacon, 100, 42
+Shrimp and Pesto, 90, 21
+Tandoori Chicken, 110, 47
+Pastrami Pizza, 95, 30
+Bolognese Pizza, 85, 29
+Quattro Stagioni, 105, 40
+Lamb and Mint, 115, 36
+Margherita, 60, 15
+Pepperoni, 70, 32
+Hawaiian, 75, 22
+BBQ Chicken, 85, 44
+Vegetarian, 65, 19
+Meat Lovers, 90, 37
+Four Cheese, 80, 28
+Buffalo Chicken, 95, 11
+Supreme, 100, 41
+Mexican, 85, 27
+Seafood Special, 110, 49
+Tuna and Sweetcorn, 95, 12
+Spicy Sausage, 80, 25
+Prosciutto and Rocket, 90, 33
+Mushroom and Truffle Oil, 120, 46
+Calzone, 85, 17
+Carbonara Pizza, 90, 31
+Pesto and Chicken, 95, 20
+Gorgonzola and Pear, 110, 35
+Salami and Olive, 80, 23
+Spinach and Ricotta, 70, 26
+Greek Pizza (Feta and Olives), 75, 18
+Zucchini and Goat Cheese, 85, 38
+Egg and Bacon, 100, 42
+Shrimp and Pesto, 90, 21
+Tandoori Chicken, 110, 47
+Pastrami Pizza, 95, 30
+Bolognese Pizza, 85, 29
+Quattro Stagioni, 105, 40
+Lamb and Mint, 115, 36

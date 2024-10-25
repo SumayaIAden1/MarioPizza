@@ -11,22 +11,26 @@ public class Pizza {
     public Pizza() //Default constructor
     {}
 
-
     public Pizza(String pName, int pPrice, int pNumber) {
         pizzaName = pName;
         pizzaPrice = pPrice;
         pizzaNr = pNumber;
     }
+
     public String getPizzaName() {
         return pizzaName;
     }
+
     public int getPizzaPrice() {
         return pizzaPrice;
     }
+
     public int getPizzaNr() {
         return pizzaNr;
     }
-public String toString() {
+
+    public String toString() {
         return "Pizza: " + pizzaName + ", Price: " + pizzaPrice + ", Number: " + pizzaNr;
-}
+    }
+
 }
