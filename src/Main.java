@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Main {
 
 
@@ -9,7 +7,7 @@ public class Main {
     }
 
     private void run(){
-        MenuKort menukortInstans = new MenuKort();
+        Menukort menukortInstans = new Menukort();
         menukortInstans.createMenuKort();
         menukortInstans.writePizzaMenuToFile();
     }

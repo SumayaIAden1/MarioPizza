@@ -2,13 +2,10 @@ import java.util.ArrayList;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.FileWriter;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
-public class MenuKort {
 
-    public MenuKort() {
+public class Menukort {
+
+    public Menukort() {
     }
     public ArrayList<Pizza> pizzaArrayList = new ArrayList<>();
 
