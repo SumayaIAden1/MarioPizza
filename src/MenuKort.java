@@ -10,7 +10,6 @@ public class MenuKort {
 
     public MenuKort() {
     }
-
     public ArrayList<Pizza> pizzaArrayList = new ArrayList<>();
 
     public void createMenuKort() {
@@ -66,6 +65,7 @@ public class MenuKort {
                         writer.append((pizzaPrice) + ", ");
                         writer.append(Integer.toString(pizzaNr) + '\n');
 
+
                         System.out.println(p.getPizzaName() + ", " + p.getPizzaPrice() + ", " + p.getPizzaNr());
                     }
 
@@ -76,7 +76,9 @@ public class MenuKort {
                     e.printStackTrace();
                 }
         }
-    }
+
+}
+
 
 
 
