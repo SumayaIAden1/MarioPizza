@@ -1,73 +1,64 @@
 import java.util.Random;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 public class Ordre {
 
+    public Ordre() {}
+
+
     private int ordreNr;
-    private int bestillingsTid;
-    private int bestillingsDato;
-    private Pizza pizzaObjekt;
+    private LocalDateTime bestillingsTid;
+    private LocalDate bestillingsDato;
+    private Pizza pizzaObject;
     private int antal;
+    private boolean paid;
+
     private Random random = new Random();
 
-    private String[] fornavn = {"Anders", "Sofie", "Peter", "Emma", "Mads", "Ida", "Lars", "Marie", "Thomas", "Clara", "Frederik", "Victoria", "Oliver", "Freja", "Mikkel", "Louise", "Simon", "Astrid", "Christian", "Isabella"}
-    private String[] efternavn = "Nielsen", "Jensen","Hansen","Pedersen","Andersen","Christensen","Larsen","Sørensen","Rasmussen","Jørgensen","Petersen","Madsen","Kristensen","Olsen","Thomsen","Christiansen","Poulsen","Møller","Mortensen","Eriksen"
 
+
+    public Ordre(int oNummer, LocalDateTime bTid, LocalDate bDato, Pizza pObject)
     {
+        this.ordreNr = oNummer;
+        this.bestillingsTid = bTid;
+        this.bestillingsDato = bDato;
+        this.pizzaObject = pObject;
+        this.paid = false;
     }
 
-    public Ordre(int oNummer, int bTid, Pizza pObjekt) {
-        ordreNr = oNummer;
-        bestillingsTid = bTid;
-        bestillingsDato = bDato;
-        pizzaObjekt = pObjekt;
+    public void markAsPaid() {
+        this.paid = true;
     }
 
-    public int getOrdreNr() {
+    public boolean isPaid() {
+        return this.paid;
+    }
+
+
+    public int getOrdreNr(){
         return ordreNr;
     }
 
-    public int getBestillingsTid() {
+    public LocalDateTime getBestillingsTid() {
         return bestillingsTid;
     }
-
-    public int getBestillingsDato() {
+    public LocalDate bestillingsDato(){
         return bestillingsDato;
     }
 
-    public Pizza getPizzaObjekt() {
-        return pizzaObjekt;
+    public Pizza getPizzaObject() {
+        return pizzaObject;
     }
 
-    public int getAntal() {
-        return antal;
+
+    public String toString() {
+        return "ORDRE:\n" +
+                " - Ordre Nr: " + ordreNr + "\n" +
+                " - Bestillings Tidspunkt: " + bestillingsTid + "\n" +
+                " - Bestillings Dato: " + bestillingsDato + "\n" +
+                " - Pizza: " + pizzaObject + "\n";
+
     }
 }
- public void generereForbruger(int antal)
-    {
-        Random random = new Random();
-
-        for (int i = 0; i < antal; i++)
-            {    String navn = "";
-            int maalerNr = 0;
-
-            int x = random.nextInt(2);
-            if (x == 0)
-                navn += drenge[random.nextInt(drenge.length)];
-            else
-                navn += piger[random.nextInt(piger.length)];
-            navn += " "+ efternavn[random.nextInt(efternavn.length)];
-
-            while(true)
-            {
-                maalerNr = random.nextInt(999)+1;
-                if (!findesMaalerNr(maalerNr))
-                    break;
-            }
-
-            Forbruger f = new Forbruger(navn,maalerNr,1000);
-            addForbruger(f);
-        }
-    }
-    

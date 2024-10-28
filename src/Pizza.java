@@ -1,21 +1,18 @@
-import java.util.ArrayList;
-
 public class Pizza {
+
+    public Pizza() {}
 
     private String pizzaName;
     private int pizzaPrice;
-    private int pizzaNr;
+    private int pizzaNumber;
 
-   //public ArrayList<Pizza> pizzaMenu
-
-    public Pizza() //Default constructor
-    {}
 
     public Pizza(String pName, int pPrice, int pNumber) {
         pizzaName = pName;
         pizzaPrice = pPrice;
-        pizzaNr = pNumber;
+        pizzaNumber = pNumber;
     }
+
 
     public String getPizzaName() {
         return pizzaName;
@@ -25,12 +22,11 @@ public class Pizza {
         return pizzaPrice;
     }
 
-    public int getPizzaNr() {
-        return pizzaNr;
+    public int getPizzaNumber() {
+        return pizzaNumber;
     }
 
     public String toString() {
-        return "Pizza: " + pizzaName + ", Price: " + pizzaPrice + ", Number: " + pizzaNr;
+        return  pizzaName + ", Price: " + pizzaPrice + ", Nr: " + pizzaNumber;
     }
-
 }
