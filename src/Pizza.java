@@ -30,4 +30,5 @@ public class Pizza {
     public String toString() {
         return  pizzaName + ", Price: " + pizzaPrice + ", Nr: " + pizzaNumber;
     }
+
 }

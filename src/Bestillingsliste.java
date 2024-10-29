@@ -35,8 +35,7 @@ public class Bestillingsliste {
         }
     }
 
-    public void writeBestillingsliste()
-    {
+    public void writeBestillingsliste() {
         File bestillingsListe = new File("/Users/bruger/Desktop/UNI/1. semester/Programmering/IntelliJ/MarioPizza/src/Bestillingsliste.txt");
 
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH.mm");
@@ -83,7 +82,7 @@ public class Bestillingsliste {
         int totalPrice = 0;
 
         try (FileWriter writer = new FileWriter(removedOrdersFile, false)) {
-            if(removedOrdersFile.length() == 0){
+            if (removedOrdersFile.length() == 0) {
                 writer.write("FINISHED / PAID FOR \n \n");
             }
             for (int i = 0; i < ordrerHistorikArray.size(); i++) {
@@ -107,6 +106,11 @@ public class Bestillingsliste {
 
             writer.append("TOTAL INCOME FOR TODAY; \n");
             writer.append(String.format("%d DKK\n", totalPrice));
+            writer.append(System.lineSeparator());
+
+            // Now append the duplicate checks results
+            writer.append("Checking for duplicate pizzas in removed orders...\n");
+            writer.append(findPizzaDuplicates()); // Append the results of duplicate checks
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -119,5 +123,38 @@ public class Bestillingsliste {
             Ordre ordre = ordrerHistorikArray.get(i);
             System.out.println(ordre);
         }
+    }
+
+    public String findPizzaDuplicates() {
+        StringBuilder duplicatesInfo = new StringBuilder();
+        boolean duplicatesFound = false;
+
+        // Iterate through the removed orders
+        for (int i = 0; i < ordrerHistorikArray.size(); i++) {
+            Ordre ordre1 = ordrerHistorikArray.get(i);
+            Pizza pizza1 = ordre1.getPizzaObject();
+
+            // Compare with subsequent orders to find duplicates
+            for (int j = i + 1; j < ordrerHistorikArray.size(); j++) {
+                Ordre ordre2 = ordrerHistorikArray.get(j);
+                Pizza pizza2 = ordre2.getPizzaObject();
+
+                // Manually check if the pizza names (and possibly other attributes) are the same
+                if (pizza1.getPizzaName().equals(pizza2.getPizzaName()) &&
+                        pizza1.getPizzaPrice() == pizza2.getPizzaPrice()) {
+                    duplicatesInfo.append(String.format("Duplicate Pizza Order: %s in orders %d and %d%n",
+                            pizza1.getPizzaName(),
+                            ordre1.getOrdreNr(),
+                            ordre2.getOrdreNr()));
+                    duplicatesFound = true;
+                }
+            }
+        }
+
+        if (!duplicatesFound) {
+            duplicatesInfo.append("No duplicate pizzas found.\n");
+        }
+
+        return duplicatesInfo.toString(); // Return the results as a string
     }
 }
