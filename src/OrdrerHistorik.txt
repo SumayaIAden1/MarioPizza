@@ -1,0 +1,12 @@
+REMOVED ORDER:
+ - ordre Number: 3
+ - bestillings Tid: 14.53
+ - bestillings Dato: 29-10-24
+ - Pizza: Hawaiian, Price: 75, Nr: 3
+
+REMOVED ORDER:
+ - ordre Number: 2
+ - bestillings Tid: 14.53
+ - bestillings Dato: 29-10-24
+ - Pizza: Margherita, Price: 60, Nr: 1
+
