@@ -1,12 +1,8 @@
-ORDRE:
- - ordre Number: 1
- - bestillings Tid: 14.53
- - bestillings Dato: 29-10-24
- - Pizza: Tuna and Sweetcorn, Price: 95, Nr: 12
+ACTIVE ORDERS / BESTILLINGSLISTE 
 
 ORDRE:
- - ordre Number: 4
- - bestillings Tid: 14.54
- - bestillings Dato: 29-10-24
- - Pizza: Pepperoni, Price: 70, Nr: 2
+ - Ordre Number: 3
+ - Bestillings Tid: 15.57
+ - Bestillings Dato: 29-10-24
+ - Pizza: Tuna and Sweetcorn, Price: 95, Nr: 12
 

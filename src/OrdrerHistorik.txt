@@ -1,12 +1,16 @@
+FINISHED / PAID FOR 
+ 
 REMOVED ORDER:
- - ordre Number: 3
- - bestillings Tid: 14.53
+ - ordre Number: 1
+ - bestillings Tid: 15.57
  - bestillings Dato: 29-10-24
- - Pizza: Hawaiian, Price: 75, Nr: 3
+ - Pizza: Tuna and Sweetcorn, Price: 95, Nr: 12
 
 REMOVED ORDER:
  - ordre Number: 2
- - bestillings Tid: 14.53
+ - bestillings Tid: 15.57
  - bestillings Dato: 29-10-24
- - Pizza: Margherita, Price: 60, Nr: 1
+ - Pizza: Spicy Sausage, Price: 80, Nr: 13
 
+TOTAL INCOME FOR TODAY; 
+175 DKK
