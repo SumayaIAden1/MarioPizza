@@ -4,9 +4,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.time.format.DateTimeFormatter;
 
+//PRECONDITION: ITEMS ARE ONLY REMOVED WHEN PAID FOR.
+
 public class Bestillingsliste {
     private ArrayList<Ordre> ordreList = new ArrayList<>();
-    private ArrayList<Ordre> removedOrdersList = new ArrayList<>();
+    private ArrayList<Ordre> ordrerHistorikArray = new ArrayList<>();
     private int currentOrderNr = 1;
 
     public void addOrdreToList(Ordre ordre) {
@@ -23,7 +25,7 @@ public class Bestillingsliste {
         for (int i = 0; i < ordreList.size(); i++) {
             Ordre o = ordreList.get(i);
             if (o.getOrdreNr() == ordreNumber) {
-                removedOrdersList.add(o); // Add to removed orders list
+                ordrerHistorikArray.add(o); // Add to removed orders list
                 ordreList.remove(i); // Remove from current orders
                 writeBestillingsliste(); // Update the orders file
                 writeRemovedOrdersToFile(); // Write all removed orders to the file
@@ -65,7 +67,8 @@ public class Bestillingsliste {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yy");
 
         try (FileWriter writer = new FileWriter(removedOrdersFile, false)) {
-            for (Ordre o : removedOrdersList) {
+            for (int i = 0; i < ordrerHistorikArray.size(); i++) {
+                Ordre o = ordrerHistorikArray.get(i);
                 Pizza pizza = o.getPizzaObject();
                 writer.append(String.format("REMOVED ORDER:\n" +
                                 " - ordre Number: %d\n" +
@@ -87,8 +90,8 @@ public class Bestillingsliste {
 
     public void printRemovedOrders() {
         System.out.println("Removed Orders:");
-        for (int i = 0; i < removedOrdersList.size(); i++) {
-            Ordre ordre = removedOrdersList.get(i);
+        for (int i = 0; i < ordrerHistorikArray.size(); i++) {
+            Ordre ordre = ordrerHistorikArray.get(i);
             System.out.println(ordre);
         }
     }
