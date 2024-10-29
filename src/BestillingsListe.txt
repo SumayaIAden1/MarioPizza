@@ -1,0 +1,18 @@
+ORDRE:
+ - ordre Number: 1
+ - bestillings Tid: 12.10
+ - bestillings Dato: 29-10-24
+ - Pizza: Pepperoni, Price: 70, Nr: 2
+
+ORDRE:
+ - ordre Number: 2
+ - bestillings Tid: 12.10
+ - bestillings Dato: 29-10-24
+ - Pizza: Hawaiian, Price: 75, Nr: 3
+
+ORDRE:
+ - ordre Number: 3
+ - bestillings Tid: 12.10
+ - bestillings Dato: 29-10-24
+ - Pizza: Four Cheese, Price: 80, Nr: 7
+

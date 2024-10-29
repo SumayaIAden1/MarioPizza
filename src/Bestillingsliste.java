@@ -35,15 +35,26 @@ public class Bestillingsliste {
 
 
     public void removeOrdreByNumber(int ordreNumber) {
+        for (int i = 0; i < ordreList.size(); i++) {
+            Ordre o = ordreList.get(i);
+            if (o.getOrdreNr() == ordreNumber) {
+                ordreList.remove(i);
+                writeBestillingsliste(); // Update the file after removal
+                break; // Exit loop after finding and removing the order
+            }
+        }
+    }
+
+   /* public void removeOrdreByNumber(int ordreNumber) {
         ordreList.removeIf(o -> o.getOrdreNr() == ordreNumber);
         writeBestillingsliste(); // Update the file after removal
-    }
+    }*/
 
 
 
     public void writeBestillingsliste()
     {
-        File bestillingsListe = new File("/Users/bruger/Desktop/UNI/1. semester/Programmering/IntelliJ/MarioPizza/src");
+        File bestillingsListe = new File("/Users/bruger/Desktop/UNI/1. semester/Programmering/IntelliJ/MarioPizza/src/bestillingsliste.txt");
 
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH.mm");
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yy");

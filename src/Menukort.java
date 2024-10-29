@@ -54,7 +54,7 @@ public class Menukort {
 
     public void writePizzaMenuToFile()
     {
-        File pizzaFile = new File("/Users/bruger/Desktop/UNI/1. semester/Programmering/IntelliJ/MarioPizza/src");
+        File pizzaFile = new File("/Users/bruger/Desktop/UNI/1. semester/Programmering/IntelliJ/MarioPizza/src/pizzaMenu.txt");
         try (FileWriter writer = new FileWriter(pizzaFile, true)) {
             for (int i = 0; i < pizzaMenuList.size(); i++) {
                 Pizza p = pizzaMenuList.get(i);
@@ -63,8 +63,8 @@ public class Menukort {
                 int pizzaPrice = p.getPizzaPrice();
                 int pizzaNr = p.getPizzaNumber();
 
-                writer.append(pizzaName + ", ");
-                writer.append(Integer.toString(pizzaPrice) + ", ");
+                writer.append("Pizza: " + pizzaName + ", Pizza price: ");
+                writer.append(Integer.toString(pizzaPrice) + ", Pizza number: ");
                 writer.append(Integer.toString(pizzaNr) + '\n');
 
                 System.out.println(p.getPizzaName() + ", " + p.getPizzaPrice() + ", " + p.getPizzaNumber());

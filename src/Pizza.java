@@ -26,6 +26,7 @@ public class Pizza {
         return pizzaNumber;
     }
 
+    @Override
     public String toString() {
         return  pizzaName + ", Price: " + pizzaPrice + ", Nr: " + pizzaNumber;
     }
