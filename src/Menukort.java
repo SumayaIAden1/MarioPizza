@@ -10,7 +10,6 @@ public class Menukort {
     {
     }
 
-
     public ArrayList<Pizza> pizzaMenuList = new ArrayList<>();
 
     public void createMenuKort() {

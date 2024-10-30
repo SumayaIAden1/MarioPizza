@@ -59,8 +59,6 @@ public class Main {
         bestillingsliste.printRemovedOrders();
 
         // After taking all orders, check for duplicates
-        System.out.println("Checking for duplicate pizza orders:");
         bestillingsliste.findPizzaDuplicates();// Call method to check for duplicates
-
     }
 }

@@ -128,33 +128,43 @@ public class Bestillingsliste {
     public String findPizzaDuplicates() {
         StringBuilder duplicatesInfo = new StringBuilder();
         boolean duplicatesFound = false;
+        String mostPopularPizza = null;
+        int maxCount = 0;
 
-        // Iterate through the removed orders
+        // Iterate over each pizza to count occurrences
         for (int i = 0; i < ordrerHistorikArray.size(); i++) {
             Ordre ordre1 = ordrerHistorikArray.get(i);
             Pizza pizza1 = ordre1.getPizzaObject();
+            String pizzaName = pizza1.getPizzaName();
 
-            // Compare with subsequent orders to find duplicates
+            int count = 1; // Starting the count from 1
+
+            // Count how many times this pizza appears in the remaining array
             for (int j = i + 1; j < ordrerHistorikArray.size(); j++) {
                 Ordre ordre2 = ordrerHistorikArray.get(j);
                 Pizza pizza2 = ordre2.getPizzaObject();
 
-                // Manually check if the pizza names (and possibly other attributes) are the same
                 if (pizza1.getPizzaName().equals(pizza2.getPizzaName()) &&
                         pizza1.getPizzaPrice() == pizza2.getPizzaPrice()) {
-                    duplicatesInfo.append(String.format("Duplicate Pizza Order: %s in orders %d and %d%n",
-                            pizza1.getPizzaName(),
-                            ordre1.getOrdreNr(),
-                            ordre2.getOrdreNr()));
-                    duplicatesFound = true;
+                    count++;
                 }
+            }
+
+            // Update the most popular pizza
+            if (count > maxCount) {
+                maxCount = count;
+                mostPopularPizza = pizzaName;
+                duplicatesFound = true;
             }
         }
 
-        if (!duplicatesFound) {
+        // Results depending on the duplicates
+        if (duplicatesFound) {
+            duplicatesInfo.append("Most popular pizza: ").append(mostPopularPizza).append("\n");
+        } else {
             duplicatesInfo.append("No duplicate pizzas found.\n");
         }
 
-        return duplicatesInfo.toString(); // Return the results as a string
+        return duplicatesInfo.toString();
     }
 }
