@@ -7,8 +7,7 @@ import java.util.Random;
 public class Menukort {
 
     public Menukort()
-    {
-    }
+    {}
 
     public ArrayList<Pizza> pizzaMenuList = new ArrayList<>();
 
@@ -51,7 +50,7 @@ public class Menukort {
     }
 
 
-    public void writePizzaMenuToFile()
+    public void writePizzaMenuToFile() //Skriver en menuKort TxtFile
     {
         File pizzaFile = new File("/Users/bruger/Desktop/UNI/1. semester/Programmering/IntelliJ/MarioPizza/src/pizzaMenu.txt");
         try (FileWriter writer = new FileWriter(pizzaFile, true)) {

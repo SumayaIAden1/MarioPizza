@@ -26,9 +26,8 @@ public class Pizza {
         return pizzaNumber;
     }
 
-    @Override
+    @Override //Overskriver en eksisterende metode
     public String toString() {
         return  pizzaName + ", Price: " + pizzaPrice + ", Nr: " + pizzaNumber;
     }
-
 }

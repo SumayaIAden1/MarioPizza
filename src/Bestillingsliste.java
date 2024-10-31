@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.time.format.DateTimeFormatter;
 
-//PRECONDITION: ITEMS ARE ONLY REMOVED WHEN PAID FOR.
+//PRECONDITION: ALLE ORDRENE ER KUN FJERNET, NÅR DET ER BLEVET BETALT.
 
 public class Bestillingsliste {
     private ArrayList<Ordre> bestillingsListeArray = new ArrayList<>();
@@ -14,23 +14,23 @@ public class Bestillingsliste {
     public void addOrdreToList(Ordre ordre) {
         bestillingsListeArray.add(ordre);
         currentOrderNr++;
-        writeBestillingsliste(); // Write to file when adding
+        writeBestillingsliste(); // Skriv i filen, når den bliver tilføjet.
     }
 
     public int getOrdreNr() {
-        return currentOrderNr; // Return the current order number
+        return currentOrderNr; // Returner current order number
     }
 
     public void removeOrdreByNumber(int ordreNumber) {
         for (int i = 0; i < bestillingsListeArray.size(); i++) {
             Ordre o = bestillingsListeArray.get(i);
             if (o.getOrdreNr() == ordreNumber) {
-                ordrerHistorikArray.add(o); // Add to removed orders list
-                bestillingsListeArray.remove(i); // Remove from current orders
-                writeBestillingsliste(); // Update the orders file
-                writeRemovedOrdersToFile(); // Write all removed orders to the file
+                ordrerHistorikArray.add(o); // Tilføj til removed order list
+                bestillingsListeArray.remove(i); // Fjern fra current orders
+                writeBestillingsliste(); // Opdater ordrenes fil
+                writeRemovedOrdersToFile(); // Skriv alle de fjernede ordre til filen
                 System.out.println("Order number " + ordreNumber + " has been removed.");
-                break; // Exit loop after finding and removing the order
+                break; // Loop er færdigt
             }
         }
     }
@@ -49,7 +49,7 @@ public class Bestillingsliste {
                 Ordre o = this.bestillingsListeArray.get(i);
                 Pizza pizza = o.getPizzaObject(); // Get
 
-                //UDSKRIVER TEKSTEN PÅ EN BESTEMT MÅDE. LINJERNE PASSER SAMMEN.
+                //Udskriver teksten på en bestemt måde. Linjerne passer sammen.
 
 
                 writer.append(String.format(
@@ -109,8 +109,8 @@ public class Bestillingsliste {
             writer.append(System.lineSeparator());
 
             // Now append the duplicate checks results
-            writer.append("Checking for duplicate pizzas in removed orders...\n");
-            writer.append(findPizzaDuplicates()); // Append the results of duplicate checks
+            writer.append("Checking for the most sold pizza in removed orders...\n");
+            writer.append(findPizzaDuplicates()); // Tilføj resultaterne af dublet
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -137,9 +137,9 @@ public class Bestillingsliste {
             Pizza pizza1 = ordre1.getPizzaObject();
             String pizzaName = pizza1.getPizzaName();
 
-            int count = 1; // Starting the count from 1
+            int count = 1; // Starter the count fra 1
 
-            // Count how many times this pizza appears in the remaining array
+            // Optæller hvor mange gange en bestemt pizza forekommer i arrayet.
             for (int j = i + 1; j < ordrerHistorikArray.size(); j++) {
                 Ordre ordre2 = ordrerHistorikArray.get(j);
                 Pizza pizza2 = ordre2.getPizzaObject();
@@ -150,7 +150,7 @@ public class Bestillingsliste {
                 }
             }
 
-            // Update the most popular pizza
+            // Opdaterer the most popular pizza
             if (count > maxCount) {
                 maxCount = count;
                 mostPopularPizza = pizzaName;
@@ -158,7 +158,7 @@ public class Bestillingsliste {
             }
         }
 
-        // Results depending on the duplicates
+        // Resultater afhængig af duplicates
         if (duplicatesFound) {
             duplicatesInfo.append("Most popular pizza: ").append(mostPopularPizza).append("\n");
         } else {

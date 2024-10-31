@@ -1,2 +1,8 @@
 ACTIVE ORDERS / BESTILLINGSLISTE 
 
+ORDRE:
+ - Ordre Number: 1
+ - Bestillings Tid: 10.13
+ - Bestillings Dato: 31-10-24
+ - Pizza: Margherita, Price: 60, Nr: 1
+

@@ -2,30 +2,30 @@ FINISHED / PAID FOR
  
 REMOVED ORDER:
  - ordre Number: 1
- - bestillings Tid: 12.02
- - bestillings Dato: 30-10-24
+ - bestillings Tid: 09.34
+ - bestillings Dato: 31-10-24
+ - Pizza: Margherita, Price: 60, Nr: 1
+
+REMOVED ORDER:
+ - ordre Number: 4
+ - bestillings Tid: 09.34
+ - bestillings Dato: 31-10-24
  - Pizza: Margherita, Price: 60, Nr: 1
 
 REMOVED ORDER:
  - ordre Number: 2
- - bestillings Tid: 12.02
- - bestillings Dato: 30-10-24
+ - bestillings Tid: 09.34
+ - bestillings Dato: 31-10-24
  - Pizza: Pepperoni, Price: 70, Nr: 2
 
 REMOVED ORDER:
- - ordre Number: 4
- - bestillings Tid: 12.02
- - bestillings Dato: 30-10-24
- - Pizza: Margherita, Price: 60, Nr: 1
-
-REMOVED ORDER:
  - ordre Number: 3
- - bestillings Tid: 12.02
- - bestillings Dato: 30-10-24
- - Pizza: Margherita, Price: 60, Nr: 1
+ - bestillings Tid: 09.34
+ - bestillings Dato: 31-10-24
+ - Pizza: Hawaiian, Price: 75, Nr: 3
 
 TOTAL INCOME FOR TODAY; 
-250 DKK
+265 DKK
 
-Checking for duplicate pizzas in removed orders...
+Checking for the most sold pizza in removed orders...
 Most popular pizza: Margherita

@@ -15,39 +15,38 @@ public class Main {
         menukortInstans.createMenuKort();
         menukortInstans.writePizzaMenuToFile();
 
-        Bestillingsliste bestillingsliste = new Bestillingsliste(); // Instantiate Bestillingsliste
+        Bestillingsliste bestillingsliste = new Bestillingsliste(); // Instans
 
         while (true) {
             System.out.println("Choose a pizza (or type 'exit' to finish, or 'remove' to remove an order)");
             String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("exit")) {
-                break; // Exit the loop if user types 'exit'
+                break;
             } else if (input.equalsIgnoreCase("remove")) {
                 System.out.println("Enter the order number to remove:");
                 int ordreToRemove;
 
                 try {
                     ordreToRemove = Integer.parseInt(scanner.nextLine());
-                    bestillingsliste.removeOrdreByNumber(ordreToRemove); // Remove order
+                    bestillingsliste.removeOrdreByNumber(ordreToRemove); // Fjerner ordreren
                 } catch (NumberFormatException e) {
                     System.out.println("Invalid input! Please enter a valid order number.");
                 }
-                continue; // Go to the next iteration of the loop
+
             }
 
-            // Handle pizza selection
+            // Håndterer pizza
             try {
-                int pizzaIndex = Integer.parseInt(input) - 1; // Parse the input as an integer
+                int pizzaIndex = Integer.parseInt(input) - 1; // Konventerer vores Integer til en String
 
                 if (pizzaIndex < 0 || pizzaIndex >= menukortInstans.getPizzaMenuList().size()) {
                     System.out.println("Invalid pizza number. Please choose a valid number.");
-                    continue; // Skip to the next iteration
                 }
 
                 Pizza selectedPizza = menukortInstans.getPizzaMenuList().get(pizzaIndex);
                 Ordre ordre = new Ordre(bestillingsliste.getOrdreNr(), LocalDateTime.now(), LocalDate.now(), selectedPizza);
-                bestillingsliste.addOrdreToList(ordre); // Add order to Bestillingsliste
+                bestillingsliste.addOrdreToList(ordre); // Tilføj ordrer til bestillingslisten
 
                 System.out.println("Order added: " + ordre);
             } catch (NumberFormatException e) {
@@ -55,10 +54,10 @@ public class Main {
             }
         }
 
-        // Optionally, print all removed orders at the end
+        // Print alle de fjernede ordrer til sidst.
         bestillingsliste.printRemovedOrders();
 
-        // After taking all orders, check for duplicates
+        // Herefter så tjek efter duplicates på de fjernede ordrer. "Most popular Pizza"
         bestillingsliste.findPizzaDuplicates();// Call method to check for duplicates
     }
 }
