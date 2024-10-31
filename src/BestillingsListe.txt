@@ -2,7 +2,13 @@ ACTIVE ORDERS / BESTILLINGSLISTE
 
 ORDRE:
  - Ordre Number: 1
- - Bestillings Tid: 10.13
+ - Bestillings Tid: 13.02
  - Bestillings Dato: 31-10-24
  - Pizza: Margherita, Price: 60, Nr: 1
+
+ORDRE:
+ - Ordre Number: 2
+ - Bestillings Tid: 13.02
+ - Bestillings Dato: 31-10-24
+ - Pizza: Four Cheese, Price: 80, Nr: 7
 

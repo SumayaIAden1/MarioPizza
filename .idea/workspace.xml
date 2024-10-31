@@ -7,11 +7,7 @@
     <list default="true" id="76c4b301-c69a-4849-a1dd-d833f9859c75" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BestillingsListe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BestillingsListe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bestillingsliste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bestillingsliste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menukort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menukort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OrdrerHistorik.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrdrerHistorik.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pizza.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pizzaMenu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pizzaMenu.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +90,7 @@
       <workItem from="1730195135316" duration="16733000" />
       <workItem from="1730228194885" duration="11000" />
       <workItem from="1730283825936" duration="4103000" />
-      <workItem from="1730363572890" duration="3564000" />
+      <workItem from="1730363572890" duration="7039000" />
     </task>
     <servers />
   </component>
